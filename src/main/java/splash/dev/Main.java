@@ -15,6 +15,7 @@ public class Main extends Application {
         mainScene = new MainScene();
 
         stage.setScene(mainScene);
+        mainScene.loadSubContent("game");
         stage.setTitle("heloo");
         stage.show();
     }
