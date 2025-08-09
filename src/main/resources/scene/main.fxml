@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.94" prefHeight="566.0" prefWidth="976.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.94" prefHeight="492.0" prefWidth="942.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane fx:id="contentArea" layoutX="111.0" layoutY="184.0" prefHeight="155.0" prefWidth="839.0" />
+      <AnchorPane fx:id="contentArea" layoutX="154.0" layoutY="187.0" prefHeight="144.0" prefWidth="660.0" />
       <Label layoutX="295.0" layoutY="14.0" text="Rock Paper Scissor" textAlignment="CENTER">
          <font>
-            <Font name="Roboto Regular" size="46.0" />
+            <Font name="Roboto Bold" size="46.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.04739336492891">
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.7314814925193787" green="0.7583333253860474" blue="1.0" />
+                        <Color red="0.4868420958518982" green="0.4868420958518982" blue="0.4868420958518982" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
+                        <Color red="0.42105263471603394" green="0.42105263471603394" blue="0.42105263471603394" />
                      </color>
                   </Stop>
                </stops>

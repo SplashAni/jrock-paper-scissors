@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="splash.dev.controller.GameController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="667.0" style="-fx-background-color: #141414; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="653.0" style="-fx-background-color: #141414; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splash.dev.controller.GameController">
    <children>
-      <Circle layoutX="126.0" layoutY="88.0" radius="84.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle layoutX="183.0" layoutY="155.0" radius="60.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
             <LinearGradient endX="1.0" endY="1.0" startY="1.0">
                <stops>
@@ -23,20 +29,46 @@
                   </Stop>
                   <Stop offset="0.9115853658536586">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
+                        <Color red="0.8815789222717285" green="0.8815789222717285" blue="0.8815789222717285" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
+                        <Color red="0.7763158082962036" green="0.7763158082962036" blue="0.7763158082962036" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </fill>
       </Circle>
-      <Circle fill="#f8f8f8" layoutX="332.0" layoutY="88.0" radius="84.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle layoutX="541.0" layoutY="91.0" radius="84.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle layoutX="341.0" layoutY="154.0" radius="60.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5789473652839661" green="0.5789473652839661" blue="0.5789473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6052631735801697" green="0.6052631735801697" blue="0.6052631735801697" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9115853658536586">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.9342105388641357" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.9605262875556946" blue="0.9605262875556946" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Circle>
+      <Circle layoutX="516.0" layoutY="157.0" radius="60.0" stroke="BLACK" strokeType="INSIDE">
          <fill>
             <LinearGradient endX="1.0" endY="1.0" startY="1.0">
                <stops>
@@ -45,12 +77,12 @@
                         <Color red="1.0" green="1.0" blue="1.0" />
                      </color>
                   </Stop>
-                  <Stop offset="0.2651006711409396">
+                  <Stop offset="0.15436241610738255">
                      <color>
                         <Color red="1.0" green="1.0" blue="1.0" />
                      </color>
                   </Stop>
-                  <Stop offset="0.27735717793419556">
+                  <Stop offset="0.2572229497462761">
                      <color>
                         <Color red="1.0" green="1.0" blue="1.0" />
                      </color>
@@ -64,8 +96,60 @@
             </LinearGradient>
          </fill>
       </Circle>
-      <ImageView fx:id="rockImage" fitHeight="114.0" fitWidth="117.0" layoutX="67.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="paperImage" fitHeight="114.0" fitWidth="117.0" layoutX="275.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="scissorImage" fitHeight="114.0" fitWidth="117.0" layoutX="478.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="rockImage" blendMode="OVERLAY" fitHeight="80.0" fitWidth="80.0" layoutX="147.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="paperImage" blendMode="OVERLAY" fitHeight="80.0" fitWidth="80.0" layoutX="303.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="scissorImage" blendMode="OVERLAY" fitHeight="80.0" fitWidth="80.0" layoutX="481.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+      <Line endX="311.33331298828125" layoutX="279.0" layoutY="78.0" startX="-207.0">
+         <stroke>
+            <LinearGradient endX="0.95260663507109" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.25" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.25" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.49783106891471596">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.25" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label layoutX="207.0" layoutY="17.0" text="Choose an action" textAlignment="CENTER">
+         <font>
+            <Font name="Roboto Bold" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.04739336492891">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7314814925193787" green="0.7583333253860474" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
    </children>
 </AnchorPane>

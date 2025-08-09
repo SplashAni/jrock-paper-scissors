@@ -21,9 +21,16 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // Load images from resources folder
-        rockImage.setImage(new Image(getClass().getResource("/img/rock.png").toExternalForm()));
-        paperImage.setImage(new Image(getClass().getResource("/img/paper.png").toExternalForm()));
-        scissorImage.setImage(new Image(getClass().getResource("/img/scissor.png").toExternalForm()));
+        loadImage(rockImage, "/img/rock.png");
+        loadImage(paperImage, "/img/paper.png");
+        loadImage(scissorImage, "/img/scissor.png");
     }
+
+    private void loadImage(ImageView view, String path) {
+        Image img = new Image(getClass().getResource(path).toExternalForm());
+        view.setImage(img);
+        view.setPreserveRatio(true);
+        view.setSmooth(true);
+    }
+
 }
